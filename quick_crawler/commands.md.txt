@@ -1,0 +1,15 @@
+response.xpath("//title").extract()
+
+response.xpath("//title/text()").extract()
+
+response.xpath("//span[@class='text']").extract()
+
+response.xpath("//span[@class='text']/text()").extract()
+
+response.xpath("//span[@class='text']/text()").extract()[0]
+
+response.xpath("//span[@class='text']/text()")[0].extract()
+
+response.css("li.next a").xpath("@href").extract()
+
+response.css("a").xpath("@href").extract()
